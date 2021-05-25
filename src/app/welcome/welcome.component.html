@@ -1,0 +1,16 @@
+<p>welcome works!</p>
+
+<button (click)="loginApplication()"> LOG IN </button>
+<button (click)="signUpApplication()"> SIGN UP</button>
+
+
+<div *ngIf="isLogInFlag">
+    <p>welcome isLogInFlag!</p>
+    <input class="input-userName" style=" display: flex;height: 40px; width:300px;margin: 10px;padding: 5px;" [(ngModel)]="userInfo.passsword" placeholder="userName*" name="userInfo-name" required/>
+    <input class="input-passsword" type="password" style=" display: flex;height: 40px; width:300px;margin: 10px; padding: 5px;" [(ngModel)]="userInfo.passsword" placeholder="passsword *" name="userInfo-passsword" required/>
+    <button (click)="loggedInIntoApplication()"> LOGIN</button>
+</div>
+
+<div *ngIf="isSignUpFlag">
+    <p>welcome isSignUpFlag!</p>
+</div>
