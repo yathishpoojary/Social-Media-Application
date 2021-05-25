@@ -18,8 +18,8 @@ node.js, mongoDB, express, Angular
   ├── bin              # Server 
   ├── database         # Database configeration
   ├── router           # Restful API
+  ├── app.js           # API integration 
 ├── src                # UI 
-├── app.js             # API integration 
 └── README.md
 
 ```
